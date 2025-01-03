@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="./style.css">
+    <link id="icon" rel="icon" href="./google-g-2015-logo.png">
+</head>
+<body>
+    <div class="container">
+        <a href="https://www.google.com/search?q=google">
+        <img class="logo" src="./Google-Logo.webp">
+        </a>
+        <div class="bar">
+            <textarea id="barra" onkeydown="preventNewLine(event)"></textarea>
+            <script>
+                function preventNewLine(event) {
+                    if (event.keyCode === 13) {
+                        event.preventDefault();
+                        // Em vez de quebrar linha, adicione um espaço
+                        document.getElementById("myTextarea").value += " ";
+                    }
+                }
+            </script>
+        <div>
+            <div class="logos">
+                <img class="micro" src="./microfone.png" alt="">
+                <img class="lupa" src="./lupa.png" alt="">
+                <a href="https://lens.google/intl/home">
+                <img class="camera" src="./camera.png" alt="">
+                 </a>
+        </div>
+        <div class="nav">
+            <a class="p1" href="https://mail.google.com/mail/" target="_blank">Gmail</a>
+            <a class="p2" href="https://photos.google.com/" target="_blank">Imagens</a>
+        </div>
+        <div class="eu">
+            <a href="https://myaccount.google.com/">
+            <img class="eu" src="./Gabriel.png" alt="">
+            </a>
+            <a href="https://about.google/products/">
+            <img class="apps" src="./apps.png" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
